@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPL Local League</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">⚽ FPL Local League</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fixtures</a></li>
+                <li><a href="#">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Left Side Window: Manager of the Week -->
+        <aside class="sidebar">
+            <div class="motw-card">
+                <h2>Manager of the Week</h2>
+                <div class="motw-content">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=random&size=100" alt="Manager of the Week" class="motw-avatar" id="motw-avatar">
+                    <h3 id="motw-name">Loading...</h3>
+                    <p class="team-name" id="motw-team">Loading...</p>
+                    <div class="points-badge">
+                        <span class="points-value" id="motw-points">0</span> pts
+                    </div>
+                    <p class="motw-desc">Highest gameweek score! Outstanding performance with their captain choice.</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content: Live League Table -->
+        <section class="main-content">
+            <div class="table-container">
+                <div class="table-header">
+                    <h2>Live League Table</h2>
+                    <span class="live-indicator">🔴 Live</span>
+                </div>
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Team / Manager</th>
+                            <th>GW</th>
+                            <th>TOT</th>
+                        </tr>
+                    </thead>
+                    <tbody id="league-table-body">
+                        <!-- Table rows populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
